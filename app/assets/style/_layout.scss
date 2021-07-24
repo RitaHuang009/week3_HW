@@ -1,0 +1,21 @@
+.d-flex{
+    display: flex;
+}
+
+.header{
+    height: 108px;
+    background-color: $primary;
+    padding: 0 88px;
+    .logo a{
+        background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/logo.png) no-repeat;
+        width: 80px;
+        height: 48.57px;
+        @include hide-text;
+    }
+}
+
+
+.footer{
+    background-color: $primary;
+    height: 200px;
+}
