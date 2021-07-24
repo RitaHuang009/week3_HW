@@ -1,0 +1,109 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.justify-content-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.align-item-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.header {
+  height: 108px;
+  background-color: #AA0601;
+  padding: 0 88px; }
+  .header .logo a {
+    background: url(https://hexschool.github.io/webLayoutTraining1st/week3/logo.png) no-repeat;
+    width: 80px;
+    height: 48.57px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap; }
+  .header .nav-bar li {
+    padding-left: 64px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px; }
+  .header .nav-bar a {
+    display: block;
+    color: #fff;
+    text-decoration: none; }
+    .header .nav-bar a:hover {
+      border-bottom: 1px solid white;
+      padding: 7px 0; }
+
+@media (mix-width: 992px) {
+  .header {
+    padding: 0 39px; }
+  .nav-bar li {
+    padding-left: 40px; }
+  .nav-bar a {
+    color: #000; } }
+
+@media (mix-width: 767px) {
+  .nav-bar li {
+    padding-left: 40px; } }
+
+.footer {
+  background-color: #AA0601;
+  height: 200px; }
+
+/*# sourceMappingURL=all.css.map */
