@@ -10,22 +10,58 @@
 </head>
 
 <body>
-  <header class="header wrap d-flex ">
+  <header class="header d-flex justify-content-between align-item-center ">
     <h1 class="logo">
-      <a href="index.html" target="_blank">看得清，才能看得遠</a>
-      <ul>
-        <li>系列鏡框</li>
-        <li>門市據點</li>
-        <li>部落格</li>
-        <li>常見問題</li>
-      </ul>
+      <a href="index.html" >看得清，才能看得遠</a>
     </h1>
+    <ul class="nav-bar d-flex align-item-center">
+        <li><a class="text-center" href="#">系列鏡框</a></li>
+        <li><a class="text-center" href="#">門市據點</a></li>
+        <li><a class="text-center" href="#">部落格</a></li>
+        <li><a class="text-center" href="#">常見問題</a></li>
+      </ul>
   </header>
 
   <%- contents %>
 
   <footer class="footer">
-    footer
+    <div class="container footer-container">
+      <div class="menu d-flex justify-content-between align-item-center">
+        <ul class="menu-bar d-flex ">
+          <li><a href="#">首頁</a></li>
+          <li><a href="#">系列鏡框</a></li>
+          <li><a href="#">門市據點</a></li>
+          <li><a href="#">部落格</a></li>
+          <li><a href="#">常見問題</a></li>
+        </ul>
+        <ul class="social d-flex">
+          <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-fb.svg" alt="fackbook"></a></li>
+          <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-ig.svg" alt="instagram"></a></li>
+          <li><a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/icon-line.svg" alt="line"></a></li>
+        </ul>
+      </div>
+      <div class="d-flex footer-about">
+        <a class="d-flex align-item-center phone" href="#">
+          <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-phone.svg" alt="icon-phone">
+          <p>0800-000-000</p>
+        </a>
+        <a class="d-flex align-item-center" href="#">
+          <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-mail.svg" alt="icon-mail">
+          <p>glasses@business.com</p>
+        </a>
+      </div>
+      <hr class="hr">
+      <div class="copyright d-flex justify-content-between">
+        <p>Copyright © 2020 Glasses.All rights reserved.</p>
+        <ul class="copyright-link d-flex justify-content-between">
+          <li><a href="#">隱私權政策</a></li>
+          <li><a href="#">服務條款</a></li>
+        </ul>
+      </div>
+    </div>
+   
+  </div>
+   
   </footer>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>

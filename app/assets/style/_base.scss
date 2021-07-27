@@ -1,0 +1,42 @@
+* , *:befor , *:after  {
+	box-sizing: border-box;
+}
+
+img {
+	display: block;   /* 去除圖片底下的2-3px空白 */
+	max-width: 100%; 
+	height: auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+.justify-content-center{
+    justify-content: center;
+}
+
+.align-item-center{
+    align-items: center;
+}
+
+.align-items-baseline{
+    align-items: baseline;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.wrap{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+}

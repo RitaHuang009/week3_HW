@@ -1,5 +1,44 @@
-hide-text{
+@mixin hide-text {
     text-indent: 101%;
-    overflow: hidden;   
+    overflow: hidden;
     white-space: nowrap;
 }
+
+.clearfix:after{
+    content:'';
+    display:table;
+    clear:both;
+}
+
+@mixin desktop{
+    @media (max-width:992px) {
+        @content
+    }
+}
+
+
+@mixin iPad{
+    @media (max-width:768px) {
+        @content
+    }
+}
+
+@mixin mobile{
+    @media (max-width:767px) {
+        @content
+    }
+}
+
+@mixin smobile {
+    @media (max-width:414px) {
+        @content
+    }
+}
+
+@mixin minmobile{
+    @media (max-width:375px) {
+        @content
+    }
+}
+
+

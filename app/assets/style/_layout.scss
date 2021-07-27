@@ -1,21 +1,217 @@
-.d-flex{
-    display: flex;
-}
 
 .header{
     height: 108px;
     background-color: $primary;
     padding: 0 88px;
     .logo a{
-        background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/logo.png) no-repeat;
+        background: url(https://hexschool.github.io/webLayoutTraining1st/week3/logo.png) no-repeat;
         width: 80px;
         height: 48.57px;
+        display: block;
         @include hide-text;
+    }
+    .nav-bar{
+        li{
+            padding-left: 64px;
+            color:$white;
+            font-size: $font-h6;
+            line-height: 30px;
+            a{
+                display: block;
+                color:$white;
+                text-decoration: none;
+                &:hover{
+                    border-bottom: 1px solid rgb(255, 255, 255);
+                    padding: 7px 0;
+                }
+            }
+        }
     }
 }
 
+@include desktop{
+    .header{
+        padding: 0 39px;
+        .nav-bar{
+            li{
+              padding-left: 40px;
+            }
+        }
+    }
+    
+}
+@include mobile{
+    .header{
+        flex-direction: column;
+        padding: 0;
+        height: auto;
+        .logo{
+            padding: 10px 0;
+            a{
+              background: url(https://firebasestorage.googleapis.com/v0/b/tzuhui-10c1e.appspot.com/o/others%2F202004%2F1587551913424-logo-new_%E5%B7%A5%E4%BD%9C%E5%8D%80%E5%9F%9F%201.png?alt=media&token=7f7e11bb-8470-4bec-8b77-ebda26cb6a76) no-repeat;
+              width: 48px;
+              height: 30px;
+            }
+        }
+        .nav-bar{
+            flex-wrap:wrap;
+            width: 100%;
+            & li{
+                padding: 0;
+                outline: 1px solid #ffffff;
+                width: 50%;
+                line-height: 27px;
+                & a{
+                    padding: 8px 0;
+                }
+            }
+             
+        }
+    }
+}
 
+.footer-container{
+    padding: 30px 20px;
+}
 .footer{
     background-color: $primary;
-    height: 200px;
+    height: auto;
+    .menu{
+        .menu-bar{
+            & li{
+                padding-right: 48px;
+            }
+            & a{
+                font-size: $font-h7;
+                color:$white;
+                text-decoration: none;
+                &:hover{
+                    border-bottom: 1px solid rgb(255, 255, 255);
+                    padding: 7px 0;
+                }
+            }
+        }
+    }
+    .social{
+        li{
+            padding-left: 32px;
+        }
+        a{
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+    }
+    .footer-about{
+        padding: 36px 0 24px 0;
+        flex-flow: column;
+        .phone{
+            padding-bottom: 16px;
+        }
+        & a{
+            text-decoration: none;
+        }
+        & img{
+            width: 40px;
+            padding-right: 20px;
+        }
+        & p{
+            font-size: $font-h4;
+            color:$white;
+            line-height: 54px;
+        }
+    }
+    .hr {
+        margin: 0 auto;
+    }
+    .copyright{
+        padding-top: 32px;
+        font-size: $font-h7;
+        color:$white;
+        line-height: 24px;
+        .copyright-link{
+            & li{
+                padding-left: 48px;
+            }
+            & a{
+                color:$white;
+                text-decoration: none;
+                font-size: 14px;
+                &:hover{
+                    border-bottom: 1px solid rgb(255, 255, 255);
+                    padding: 5px 0;
+                }
+            }
+        }
+    }
+}
+
+@include desktop{
+    .footer-container{
+        padding: 30px 15px;
+    }
+    .footer{
+        .menu{
+            .menu-bar{
+                & li{
+                    padding-right: 40px;
+                }
+            }
+        }
+        .social{
+            & img{
+                width: 24px;
+            }
+        }
+        .footer-about{
+            padding: 18px 0 20px 0;
+            .phone{
+                padding-bottom: 12px;
+            }
+            & img{
+                width: 18px;
+                padding-right: 11px;
+            }
+            & p{
+                font-size: $font-h6;
+                color:$white;
+                line-height: 30px;
+            }
+        }
+        .copyright{
+            padding-top: 24px;
+        }
+    }
+}
+
+@include mobile{
+    .footer-container{
+        padding: 24px 15px;
+    }
+    .footer{
+        .menu-bar{
+            display: none;
+        }
+        .menu {
+            float: right;
+            padding-top: 2px;
+        }
+        .footer-about{
+            padding: 0 0 20px 0;
+        }
+        .copyright{
+            flex-direction: column;
+            padding-top: 16px;
+            & p{
+                padding-bottom: 8px;
+            }
+            .copyright-link{
+                flex-direction: column;
+                & li{
+                    padding-left: 0;
+                    padding-bottom: 8px;
+                }
+            }
+        }
+    }
 }

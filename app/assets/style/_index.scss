@@ -1,0 +1,137 @@
+.banner{
+    background: url(https://hexschool.github.io/webLayoutTraining1st/week3/banner.png) center center;
+    height: 840px;
+    background-size:cover;
+    color: $danger;
+    .banner-text{
+        flex-direction: column;
+        align-items: flex-end;
+        height: 100%;
+    }
+    & h4{
+        font-size: $font-h4;
+        line-height: 54px;
+    }
+    & p{
+        font-size: 64px;
+        line-height: 96px;
+        font-weight: bold;
+    }
+}
+
+@media (max-width:1180px){
+    .banner-text{
+        padding: 0 30px;
+    }
+}
+@include desktop{
+    .banner{
+        height: 840px;
+        .banner-text{
+            & h4{
+                font-size: $font-h6;
+                line-height: 30px;
+            }
+            & p{
+                font-size: $font-h3;
+                line-height: 72px;
+            }
+        }
+    }
+}
+@include mobile{
+    .banner{
+        height: 394px;
+        .banner-text{
+            & h4{
+                font-size: $font-h7;
+                line-height: 30px;
+            }
+            & p{
+                font-size: 32px;
+                line-height: 72px;
+            }
+        }
+    }
+}
+
+//第一屏 introduce//
+
+.introduce{
+    background-color: $secondary;
+    height: auto;
+    h3{
+        font-size: $font-h3;
+        line-height: 72px;
+        color: $danger;
+        font-weight: bold;
+        text-align: center;
+    }
+    .introduce-box{
+        padding: 60px 0 80px 0;
+        .introduce-icon{
+            padding-top: 48px;
+            flex-wrap:wrap;
+            justify-content: space-around;
+            & img{
+                width: 100px;
+                height: 100px;
+            }
+            & li{
+               flex-direction: column;
+               width: 22%;
+            }
+            & h5{
+               font-size: $font-h5;
+               line-height: 36px;
+               color: $danger;
+               font-weight: bold;
+               padding-top: 24px;
+            }
+            & p{
+               font-size: $font-h7;
+               line-height: 24px;
+               padding-top: 8px;
+               text-align:justify
+            }
+        }
+        
+    }
+}
+@include mobile{
+    .introduce{
+        h3{
+            font-size: 32px;
+        }
+        .introduce-box{
+            flex-wrap: wrap;
+            padding: 60px 0 37px 0;
+            .introduce-icon{
+                padding-top: 40px;
+                & li{
+                    width: 37%;
+                    padding-bottom: 40px;
+                }
+            }
+        } 
+    } 
+}
+
+@include smobile{
+    .introduce{
+        h3{
+            font-size: $font-h5;
+        }
+        .introduce-box{
+            flex-wrap: wrap;
+            padding: 32px 0 0 0;
+            .introduce-icon{
+                padding-top: 28px;
+                & li{
+                    width: 80%;
+                    padding-bottom: 40px;
+                }
+            }
+        } 
+    } 
+}
