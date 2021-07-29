@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -50,6 +52,9 @@ table {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+body {
+  font-family: Roboto, "Noto Sans TC", sans-serif; }
+
 img {
   display: block;
   /* 去除圖片底下的2-3px空白 */
@@ -69,6 +74,11 @@ img {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.justify-content-flex-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
 .align-item-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -83,6 +93,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.flex-row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
 
 .wrap {
   max-width: 1110px;
@@ -206,6 +222,338 @@ img {
       .introduce .introduce-box .introduce-icon li {
         width: 80%;
         padding-bottom: 40px; } }
+
+.classic-box {
+  padding: 60px 0 48px 0; }
+  .classic-box h3 {
+    font-size: 48px;
+    line-height: 72px;
+    color: #650300;
+    font-weight: bold;
+    text-align: center; }
+  .classic-box .classic-photo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 40px; }
+    .classic-box .classic-photo li {
+      padding-bottom: 32px; }
+    .classic-box .classic-photo p {
+      font-size: 48px;
+      color: #AA0601;
+      line-height: 72px;
+      font-weight: 900;
+      font-style: italic;
+      padding-right: 30px; }
+    .classic-box .classic-photo img {
+      width: 57%; }
+    .classic-box .classic-photo .classic-text {
+      padding-left: 30px; }
+      .classic-box .classic-photo .classic-text img {
+        padding-right: 8px; }
+
+@media (max-width: 992px) {
+  .classic-box .classic-photo {
+    padding: 40px 20px 0 20px; }
+    .classic-box .classic-photo p {
+      font-size: 36px;
+      line-height: 54px; }
+    .classic-box .classic-photo img {
+      width: 52%; } }
+
+@media (max-width: 767px) {
+  .classic-box .classic-photo {
+    padding: 40px 20px 0 20px; }
+    .classic-box .classic-photo li {
+      padding-bottom: 8px; }
+    .classic-box .classic-photo p {
+      font-size: 28px;
+      line-height: 72px; }
+    .classic-box .classic-photo img {
+      width: 52%; }
+    .classic-box .classic-photo .sunglasses {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse; }
+    .classic-box .classic-photo .classic-text img {
+      width: 36px;
+      height: 36px; } }
+
+@media (max-width: 580px) {
+  .classic-box .classic-photo {
+    padding: 40px 20px 0 20px; }
+    .classic-box .classic-photo li {
+      padding-bottom: 8px;
+      position: relative; }
+    .classic-box .classic-photo p {
+      font-size: 28px;
+      line-height: 72px; }
+    .classic-box .classic-photo img {
+      width: 100%; }
+    .classic-box .classic-photo .sunglasses {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse; }
+    .classic-box .classic-photo .classic-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      padding-left: 0; }
+      .classic-box .classic-photo .classic-text img {
+        width: 36px;
+        height: 36px; } }
+
+.mr-30 {
+  margin-right: 30px; }
+
+.design {
+  background: url(https://hexschool.github.io/webLayoutTraining1st/week3/bg.png) no-repeat;
+  height: auto;
+  background-size: cover;
+  padding: 80px 20px 60px 20px; }
+  .design .design-box h3 {
+    font-size: 48px;
+    line-height: 72px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center; }
+  .design .design-box .design-text {
+    padding-top: 40px; }
+    .design .design-box .design-text .design-photo-left {
+      padding-right: 30px; }
+    .design .design-box .design-text li {
+      position: relative; }
+    .design .design-box .design-text a::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.5); }
+    .design .design-box .design-text img {
+      width: 100%; }
+    .design .design-box .design-text p {
+      font-size: 72px;
+      color: #AA0601;
+      line-height: 108px;
+      font-weight: 700;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      width: 100%; }
+
+@media (max-width: 992px) {
+  .design .design-box h3 {
+    font-size: 32px;
+    line-height: 48px; }
+  .design .design-box .design-text li {
+    width: 90%; }
+  .design .design-box .design-text p {
+    font-size: 32px;
+    line-height: 43px; } }
+
+@media (max-width: 767px) {
+  .mr-30 {
+    margin-right: 0;
+    margin-bottom: 16px; }
+  .design {
+    padding: 32px 20px 40px 20px; }
+    .design .design-box h3 {
+      font-size: 20px;
+      line-height: 30px; }
+    .design .design-box .design-text {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      padding-top: 20px; }
+      .design .design-box .design-text li {
+        width: 100%; }
+      .design .design-box .design-text p {
+        font-size: 32px;
+        line-height: 43px; } }
+
+.recommend-box {
+  padding: 60px 20px 80px 20px; }
+  .recommend-box h3 {
+    font-size: 48px;
+    line-height: 72px;
+    color: #650300;
+    font-weight: bold;
+    text-align: center; }
+  .recommend-box .rec-item {
+    padding-top: 40px; }
+    .recommend-box .rec-item li {
+      width: 23%;
+      border-radius: 5px;
+      -webkit-box-shadow: 3px 3px 7px #3333;
+              box-shadow: 3px 3px 7px #3333; }
+    .recommend-box .rec-item img {
+      border-radius: 5px 5px 0 0; }
+    .recommend-box .rec-item .rec-info {
+      padding: 16px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      height: 200px; }
+    .recommend-box .rec-item .rec-name {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 500;
+      color: #212529; }
+    .recommend-box .rec-item .rec-text {
+      font-size: 16px;
+      line-height: 24px;
+      color: #212529;
+      text-align: justify;
+      padding-top: 8px; }
+    .recommend-box .rec-item .rec-date {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+      color: #707070; }
+
+@media (max-width: 992px) {
+  .recommend-box {
+    padding: 60px 40px 24px 40px; }
+    .recommend-box h3 {
+      font-size: 32px;
+      line-height: 48px; }
+    .recommend-box .rec-item {
+      padding-top: 32px;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .recommend-box .rec-item img {
+        width: 100%; }
+      .recommend-box .rec-item li {
+        width: 48%;
+        margin-bottom: 32px; }
+      .recommend-box .rec-item .rec-info {
+        height: 150px; } }
+
+@media (max-width: 767px) {
+  .recommend-box {
+    padding: 60px 40px 24px 40px; }
+    .recommend-box h3 {
+      font-size: 20px;
+      line-height: 30px; }
+    .recommend-box .rec-item {
+      padding-top: 20px; }
+      .recommend-box .rec-item li {
+        width: 100%;
+        margin-bottom: 16px; }
+      .recommend-box .rec-item .rec-info {
+        height: 150px; } }
+
+.contact {
+  background-color: #FBF2F2;
+  height: auto; }
+  .contact .contact-box {
+    max-width: 730px;
+    margin: 0 auto;
+    padding: 60px 20px 80px 20px; }
+  .contact h3 {
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: bold;
+    text-align: center; }
+  .contact h6 {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 24px; }
+  .contact .contact-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding-top: 20px; }
+    .contact .contact-form label {
+      font-size: 16px;
+      line-height: 24px; }
+    .contact .contact-form input {
+      padding: 14px 0 14px 16px;
+      margin-top: 4px;
+      font-size: 16px;
+      line-height: 24px;
+      border: 1px solid #000000;
+      background: transparent; }
+      .contact .contact-form input:focus {
+        outline: 0;
+        border: 1px solid #AA0601; }
+    .contact .contact-form textarea {
+      background: transparent;
+      border: 1px solid #000000;
+      padding: 14px 0 14px 16px;
+      margin-top: 4px; }
+      .contact .contact-form textarea:focus {
+        outline: 0;
+        border: 1px solid #AA0601; }
+  .contact .contact-checkbox {
+    padding-top: 16px;
+    padding-bottom: 40px; }
+    .contact .contact-checkbox span {
+      padding-left: 4px;
+      font-size: 16px;
+      line-height: 24px; }
+  .contact .btn-submit {
+    width: 50%;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    background-color: #AA0601;
+    padding: 16px 0;
+    border: none;
+    display: block;
+    margin: 0 auto; }
+    .contact .btn-submit:hover {
+      background-color: #650300; }
+
+@media (max-width: 992px) {
+  .contact .contact-box {
+    max-width: 450px;
+    padding: 40px 20px 56px 20px; }
+  .contact h3 {
+    font-size: 32px;
+    line-height: 48px; }
+  .contact h6 {
+    font-size: 16px;
+    line-height: 24px; }
+  .contact .contact-form label {
+    font-size: 14px;
+    line-height: 21px; }
+  .contact .contact-form input {
+    padding: 8px 0 8px 12px;
+    font-size: 14px;
+    line-height: 21px; }
+  .contact .contact-checkbox {
+    padding-bottom: 20px; }
+    .contact .contact-checkbox span {
+      font-size: 14px;
+      line-height: 21px; }
+  .contact .btn-submit {
+    width: 40%;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 10px 0; } }
+
+@media (max-width: 767px) {
+  .contact .contact-box {
+    max-width: 345px;
+    padding: 30px 20px 40px 20px; }
+  .contact h3 {
+    font-size: 20px;
+    line-height: 30px; }
+  .contact .btn-submit {
+    width: 60%; } }
 
 .header {
   height: 108px;
