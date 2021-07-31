@@ -649,7 +649,11 @@ img {
       color: #fff;
       line-height: 54px; }
   .footer .hr {
-    margin: 0 auto; }
+    margin: 0 auto;
+    border: 0;
+    color: #fff;
+    height: 1px;
+    background-color: #fff; }
   .footer .copyright {
     padding-top: 32px;
     font-size: 16px;
