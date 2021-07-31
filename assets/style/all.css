@@ -48,6 +48,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.container {
+  max-width: 1110px;
+  margin: 0 auto; }
+
+.wrap {
+  max-width: 1110px;
+  margin: 0 auto; }
+
 *, *:befor, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -99,14 +107,6 @@ img {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse; }
-
-.wrap {
-  max-width: 1110px;
-  margin: 0 auto; }
-
-.container {
-  max-width: 1110px;
-  margin: 0 auto; }
 
 .clearfix:after {
   content: '';
@@ -712,5 +712,75 @@ img {
       .footer .copyright .copyright-link li {
         padding-left: 0;
         padding-bottom: 8px; } }
+
+.faq {
+  padding: 96px 40px 128px 40px; }
+  .faq .title {
+    border-left: 8px solid #9F1213;
+    font-size: 48px;
+    line-height: 70px;
+    padding-left: 16px;
+    font-weight: 700; }
+  .faq .subtitle {
+    font-size: 32px;
+    line-height: 45px;
+    font-weight: 700;
+    padding-top: 60px; }
+  .faq .faq-box {
+    padding-top: 36px; }
+    .faq .faq-box li {
+      padding-bottom: 32px; }
+    .faq .faq-box h6 {
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 700;
+      padding-bottom: 16px; }
+    .faq .faq-box p {
+      font-size: 16px;
+      line-height: 24px;
+      padding-left: 91px;
+      text-align: justify; }
+
+@media (max-width: 992px) {
+  .faq {
+    padding: 60px 40px 72px 40px; }
+    .faq .title {
+      border-left: 4px solid #9F1213; }
+    .faq .subtitle {
+      padding-top: 40px; }
+    .faq .faq-box {
+      padding-top: 32px; }
+      .faq .faq-box li {
+        padding-bottom: 24px; }
+      .faq .faq-box p {
+        padding-left: 54px; } }
+
+@media (max-width: 414px) {
+  .faq {
+    padding: 28px 15px 36px 15px; }
+    .faq .title {
+      border-left: 4px solid #9F1213;
+      font-size: 28px;
+      line-height: 40px;
+      padding-left: 8px; }
+    .faq .subtitle {
+      font-size: 20px;
+      line-height: 30px;
+      padding-top: 24px; }
+    .faq .faq-box {
+      padding-top: 24px; }
+      .faq .faq-box li {
+        padding-bottom: 20px; }
+      .faq .faq-box h6 {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 700;
+        padding-bottom: 8px; }
+      .faq .faq-box p {
+        font-size: 14px;
+        line-height: 21px;
+        padding-left: 0; }
+      .faq .faq-box .pt-16 {
+        padding-top: 16px; } }
 
 /*# sourceMappingURL=all.css.map */
