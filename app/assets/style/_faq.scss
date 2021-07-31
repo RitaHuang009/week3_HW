@@ -1,0 +1,92 @@
+.faq{
+    padding: 96px 40px 128px 40px;
+    .title{
+       border-left: 8px solid $warning;
+       font-size: $font-h3;
+       line-height: 70px;
+       padding-left: 16px;
+       font-weight: 700;
+    }
+    .subtitle{
+        font-size: 32px;
+        line-height: 45px;
+        font-weight: 700;
+        padding-top: 60px;
+    }
+    .faq-box{
+        padding-top: 36px;
+        li{
+            padding-bottom: 32px;
+        }
+        h6{
+            font-size: $font-h6;
+            line-height: 28px;
+            font-weight: 700;
+            padding-bottom: 16px;
+        }
+        p{
+            font-size: $font-h7;
+            line-height: 24px;
+            padding-left: 91px; 
+            text-align: justify;
+        }
+    }
+}
+
+@include desktop{
+    .faq{
+        padding: 60px 40px 72px 40px;
+        .title{
+           border-left: 4px solid $warning;
+        }
+        .subtitle{
+            padding-top: 40px;
+        }
+        .faq-box{
+            padding-top: 32px;
+            li{
+                padding-bottom: 24px;
+            }
+            p{
+                padding-left: 54px; 
+            }
+        }
+    } 
+}
+
+@include smobile{
+    .faq{
+        padding: 28px 15px 36px 15px;
+        .title{
+           border-left: 4px solid $warning;
+           font-size: 28px;
+           line-height: 40px;
+           padding-left: 8px;
+        }
+        .subtitle{
+            font-size: $font-h6;
+            line-height: 30px;
+            padding-top: 24px;
+        }
+        .faq-box{
+            padding-top: 24px;
+            li{
+                padding-bottom: 20px;
+            }
+            h6{
+                font-size: $font-h7;
+                line-height: 20px;
+                font-weight: 700;
+                padding-bottom: 8px;
+            }
+            p{
+                font-size: 14px;
+                line-height: 21px;
+                padding-left: 0; 
+            }
+            .pt-16{
+                padding-top: 16px;
+            }
+        }
+    }
+}
